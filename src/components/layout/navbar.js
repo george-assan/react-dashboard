@@ -42,7 +42,7 @@ const Navbar = () => {
 
                 </div>
 
-                Collapse
+                {/* Collapse */}
                 <div class="collapse navbar-collapse" id="sidebarCollapse">
 
                     {/* Form */}

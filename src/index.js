@@ -7,7 +7,6 @@ import './assets/libs/highlight.js/styles/vs2015.css';
 import './assets/libs/quill/dist/quill.core.css';
 import './assets/libs/select2/dist/css/select2.min.css';
 import './assets/libs/flatpickr/dist/flatpickr.min.css';
-
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

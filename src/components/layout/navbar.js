@@ -7,35 +7,35 @@ const Navbar = () => {
         <nav className="navbar navbar-vertical fixed-left navbar-expand-md navbar-light" id="sidebar">
             <div className="container-fluid">
                  {/* Toggler */}
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
 
                 {/* Brand */}
-                <a class="navbar-brand" href="index.html">
+                <a className="navbar-brand" href="index.html">
                     <img src={logo} class="navbar-brand-img mx-auto" alt="..."/>
                 </a>
 
                 {/* User (xs) */}
-                <div class="navbar-user d-md-none">
+                <div className="navbar-user d-md-none">
 
                      {/* Dropdown */}
-                    <div class="dropdown">
+                    <div className="dropdown">
 
                     {/* Toggle  */}
-                    <a href="#!" id="sidebarIcon" class="dropdown-toggle" role="button" data-toggle="dropdown"
+                    <a href="#!" id="sidebarIcon" className="dropdown-toggle" role="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         <div class="avatar avatar-sm avatar-online">
-                        <img src="assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle" alt="..."/>
+                        <img src="assets/img/avatars/profiles/avatar-1.jpg" className="avatar-img rounded-circle" alt="..."/>
                         </div>
                     </a>
 
                     {/* Menu */}
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="sidebarIcon">
-                        <a href="profile-posts.html" class="dropdown-item">Profile</a>
-                        <a href="settings.html" class="dropdown-item">Settings</a>
-                        <hr class="dropdown-divider"/>
-                        <a href="sign-in.html" class="dropdown-item">Logout</a>
+                    <div className="dropdown-menu dropdown-menu-right" aria-labelledby="sidebarIcon">
+                        <a href="profile-posts.html" className="dropdown-item">Profile</a>
+                        <a href="settings.html" className="dropdown-item">Settings</a>
+                        <hr className="dropdown-divider"/>
+                        <a href="sign-in.html" className="dropdown-item">Logout</a>
                     </div>
 
                     </div>
@@ -43,64 +43,64 @@ const Navbar = () => {
                 </div>
 
                 {/* Collapse */}
-                <div class="collapse navbar-collapse" id="sidebarCollapse">
+                <div className="collapse navbar-collapse" id="sidebarCollapse">
 
                     {/* Form */}
-                    <form class="mt-4 mb-3 d-md-none">
-                    <div class="input-group input-group-rounded input-group-merge">
+                    <form className="mt-4 mb-3 d-md-none">
+                    <div className="input-group input-group-rounded input-group-merge">
                         <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="Search"
                         aria-label="Search"/>
-                        <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <span class="fe fe-search"></span>
+                        <div className="input-group-prepend">
+                        <div className="input-group-text">
+                            <span className="fe fe-search"></span>
                         </div>
                         </div>
                     </div>
                     </form>
 
                     {/* Navigation */}
-                    <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sidebarDashboards" data-toggle="collapse" role="button" aria-expanded="true"
+                    <ul className="navbar-nav">
+                    <li className="nav-item">
+                        <a className="nav-link" href="#sidebarDashboards" data-toggle="collapse" role="button" aria-expanded="true"
                         aria-controls="sidebarDashboards">
-                        <i class="fe fe-home"></i> Dashboards
+                        <i className="fe fe-home"></i> Dashboards
                         </a>
-                        <div class="collapse show" id="sidebarDashboards">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
+                        <div className="collapse show" id="sidebarDashboards">
+                        <ul className="nav nav-sm flex-column">
+                            <li className="nav-item">
                             <a href="index.html" class="nav-link active">
                                 Default
                             </a>
                             </li>
-                            <li class="nav-item">
-                            <a href="dashboard-alt.html" class="nav-link ">
+                            <li className="nav-item">
+                            <a href="dashboard-alt.html" className="nav-link ">
                                 Alternative <span class="badge badge-soft-success ml-auto">New</span>
                             </a>
                             </li>
                         </ul>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sidebarPages" data-toggle="collapse" role="button" aria-expanded="false"
+                    <li className="nav-item">
+                        <a className="nav-link" href="#sidebarPages" data-toggle="collapse" role="button" aria-expanded="false"
                         aria-controls="sidebarPages">
-                        <i class="fe fe-file"></i> Pages
+                        <i className="fe fe-file"></i> Pages
                         </a>
-                        <div class="collapse " id="sidebarPages">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                            <a href="#sidebarProfile" class="nav-link" data-toggle="collapse" role="button" aria-expanded="false"
+                        <div className="collapse " id="sidebarPages">
+                        <ul className="nav nav-sm flex-column">
+                            <li className="nav-item">
+                            <a href="#sidebarProfile" className="nav-link" data-toggle="collapse" role="button" aria-expanded="false"
                                 aria-controls="sidebarProfile">
                                 Profile
                             </a>
-                            <div class="collapse " id="sidebarProfile">
-                                <ul class="nav nav-sm flex-column">
-                                <li class="nav-item">
-                                    <a href="profile-posts.html" class="nav-link ">
+                            <div className="collapse " id="sidebarProfile">
+                                <ul className="nav nav-sm flex-column">
+                                <li className="nav-item">
+                                    <a href="profile-posts.html" className="nav-link ">
                                     Posts
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="profile-groups.html" class="nav-link ">
+                                <li className="nav-item">
+                                    <a href="profile-groups.html" className="nav-link ">
                                     Groups
                                     </a>
                                 </li>
@@ -494,7 +494,7 @@ const Navbar = () => {
                     <div class="navbar-user d-none d-md-flex" id="sidebarUser">
 
                     {/* Icon */}
-                    <a href="#sidebarModalActivity" class="navbar-user-link" data-toggle="modal">
+                    <a href="#modalVerticalLeft" class="navbar-user-link" data-toggle="modal">
                         <span class="icon">
                         <i class="fe fe-bell"></i>
                         </span>

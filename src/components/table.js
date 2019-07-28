@@ -54,6 +54,9 @@ const Table = (props) => {
                                     <th scope="col">
                                         <a href="#" class="text-muted sort" data-sort="tables-handle"  onClick={() => props.sortBy('city')}>City</a>
                                     </th>
+                                    <th>
+                                       
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody className="list">
@@ -64,6 +67,7 @@ const Table = (props) => {
                                     <td className="tables-first">{row.name}</td>
                                     <td className="tables-last">{row.age}</td>
                                     <td className="tables-handle">{row.city}</td>
+                                    <td className="tables-button"><a href="#" class="btn btn-primary">Click me</a></td>
                                 </tr>
                                 ))
                                 }
